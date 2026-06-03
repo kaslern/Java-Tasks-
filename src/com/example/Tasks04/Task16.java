@@ -15,7 +15,7 @@ public class Task16 {
 
         System.out.println(digitSumRec(123));
 
-        System.out.println(122323325 % 10);
+
     }
 
 }
