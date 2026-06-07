@@ -21,8 +21,8 @@
     - Read net price (`BigDecimal`).
     - Add 23% VAT and print the gross price rounded to two decimal places.
 
-6. **Comparing prices**
-    - Read two prices (`BigDecimal`).
+**6. **Comparing prices**
+    - Read two prices (`BigDecimal`).**
     - Check which one is greater using `compareTo()` and print the proper message.
 
 7. **Shopping cart sum**
