@@ -28,5 +28,9 @@ public class Car {
         System.out.println("I am a car of brand " + brand + " from year " + yearOfProduction);
     }
 
+    public static void classDescription() {
+        System.out.println("This class represents cars");
+    }
+
 
 }

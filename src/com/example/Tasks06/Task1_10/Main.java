@@ -23,6 +23,8 @@ public class Main {
         car1.introduceYourself();
         car3.introduceYourself();
 
+        Car.classDescription();
+
 
 
     }
