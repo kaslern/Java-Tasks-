@@ -11,9 +11,11 @@ public class Main {
 
         System.out.println(car1.brand + " " + car1.yearOfProduction);
         System.out.println(car2.brand + " " + car2.yearOfProduction);
-        System.out.println(car3.brand + " " + car2.yearOfProduction);
-        System.out.println(car4.brand + " " + car2.yearOfProduction);
+        System.out.println(car3.brand + " " + car3.yearOfProduction);
+        System.out.println(car4.brand + " " + car4.yearOfProduction);
 
         car1.showDiffrence();
+        car1.changeBrand("Opel");
+        System.out.println(car1.brand);
     }
 }

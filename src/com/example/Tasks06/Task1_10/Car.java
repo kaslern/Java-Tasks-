@@ -20,4 +20,10 @@ public class Car {
         System.out.println("Local brand: " + brand);
         System.out.println("Field brand: " + this.brand);
     }
+
+    public void changeBrand(String brand) {
+        this.brand = brand;
+    }
+
+
 }
