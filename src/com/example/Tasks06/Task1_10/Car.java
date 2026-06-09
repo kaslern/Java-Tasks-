@@ -13,4 +13,11 @@ public class Car {
         this.brand = brand;
         this.yearOfProduction = yearOfProduction;
     }
+
+    public void showDiffrence() {
+        String brand = "Local variable";
+
+        System.out.println("Local brand: " + brand);
+        System.out.println("Field brand: " + this.brand);
+    }
 }
