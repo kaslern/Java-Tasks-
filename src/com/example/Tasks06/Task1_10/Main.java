@@ -9,7 +9,6 @@ public class Main {
         Car car4 = new Car("Mercedes", 2015);
         Car car5 = new Car();
 
-
         System.out.println(car1.brand + " " + car1.yearOfProduction);
         System.out.println(car2.brand + " " + car2.yearOfProduction);
         System.out.println(car3.brand + " " + car3.yearOfProduction);
@@ -20,5 +19,11 @@ public class Main {
         System.out.println(car1.brand);
 
         System.out.println(car5.brand + " " + car5.yearOfProduction);
+
+        car1.introduceYourself();
+        car3.introduceYourself();
+
+
+
     }
 }

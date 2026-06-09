@@ -24,5 +24,9 @@ public class Car {
         this.brand = brand;
     }
 
+    public void introduceYourself() {
+        System.out.println("I am a car of brand " + brand + " from year " + yearOfProduction);
+    }
+
 
 }
