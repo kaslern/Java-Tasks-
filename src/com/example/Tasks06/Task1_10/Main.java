@@ -25,6 +25,8 @@ public class Main {
 
         Car.classDescription();
 
+        System.out.println("Number of cars created: " + Car.counter);
+
 
 
     }

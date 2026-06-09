@@ -3,6 +3,7 @@ package com.example.Tasks06.Task1_10;
 public class Car {
     String brand;
     int yearOfProduction;
+    static int counter;
 
     public Car() {
         this("Unknown", 2000);
@@ -11,6 +12,7 @@ public class Car {
     public Car(String brand, int yearOfProduction) {
         this.brand = brand;
         this.yearOfProduction = yearOfProduction;
+        counter++;
     }
 
     public void showDiffrence() {
