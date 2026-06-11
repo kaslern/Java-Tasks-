@@ -25,6 +25,15 @@ public class Main {
         product1.showProduct();
         product2.reducePrice(new BigDecimal("5.98"), "Late date");
 
+        // Task20
+
+        Product[] products = {product1, product2, product3};
+
+        Shop shop1 = new Shop("Żabka", products);
+
+        System.out.println("Product list from shop: " + shop1.name);
+        shop1.showProducts();
+
     }
 
 
