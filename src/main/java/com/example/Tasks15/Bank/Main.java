@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 public class Main {
     public static void main(String[] args) {
         ExecutorService pool = Executors.newFixedThreadPool(8);
-        Random random = new Random(42);
+        Random random = new Random();
         Bank bank = new Bank();
 
         for (int i = 0; i < 10; i++) {
@@ -18,7 +18,7 @@ public class Main {
 
         CompletableFuture<?>[] tasks = new CompletableFuture<?>[1000];
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < tasks.length; i++) {
             int from = random.nextInt(10);
             int to = random.nextInt(10);
 
@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Łączny stan kasy w banku: " + actual + " gr");
 
         if (actual != expected) {
-            throw new AssertionError("NIEZMIENNIK ZŁAMANY – bilans się nie zgadza!");
+            throw new AssertionError("Bilans się nie zgadza!");
         } else {
             System.out.println("Sukces! Wszystkie przelewy wykonane, bilans banku jest nienaruszony.");
         }

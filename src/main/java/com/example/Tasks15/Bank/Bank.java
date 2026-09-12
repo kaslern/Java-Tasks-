@@ -20,6 +20,8 @@ public class Bank {
         BankAccount from = accounts.get(fromId);
         BankAccount to = accounts.get(toId);
 
+
+
         BankAccount firstLock = (fromId < toId) ? from : to;
         BankAccount secondLock = (fromId < toId) ? to : from;
 

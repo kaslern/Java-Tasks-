@@ -21,6 +21,14 @@ public class TwoKeyMapTester {
         System.out.println("Size after adding elements: " + grades.size());
         System.out.println("Map toString: " + grades);
 
+        // 3b. Test kopiowania map: putAll()
+        System.out.println("\n--- Testing putAll() ---");
+        TwoKeyMap<String, String, Integer> extraGrades = new CompositeTwoKeyHashMap<>();
+        extraGrades.put("Adam", "Kowalski", 5);
+        extraGrades.put("Ewa", "Lis", 4);
+        grades.putAll(extraGrades);
+        System.out.println("Size of map after putAll(): " + grades.size());
+
         // 4. Test odczytu i sprawdzania zawartości: get(), containsKeys(), containsValue()
         System.out.println("\n--- Testing get() and contains ---");
         System.out.println("Get Anna Nowak: " + grades.get("Anna", "Nowak"));
